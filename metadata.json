@@ -1,0 +1,8 @@
+{
+  "name": "Unrestricted Pixel Studio",
+  "description": "A high-performance AI photo editor and creative studio featuring style transfer, enhancements, and object manipulation using Gemini Pro Vision.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
