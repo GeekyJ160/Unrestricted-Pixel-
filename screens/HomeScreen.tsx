@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Plus, Image as ImageIcon, Zap, Eraser, Move, Palette, Sparkles, ChevronRight, Crown } from 'lucide-react';
 import { Project, ToolType } from '../types';
@@ -16,6 +17,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ onCreateProject, onOpenProject,
   const [activeTab, setActiveTab] = useState('home');
 
   const recentProjects: Project[] = [
+    { 
+      id: 'blank', 
+      title: 'Blank Canvas', 
+      date: 'Ready to Edit', 
+      image: 'https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000&auto=format&fit=crop', 
+      thumbnail: 'https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=400&auto=format&fit=crop', 
+      type: 'Template' 
+    },
     { id: '1', title: 'Cyberpunk Portrait', date: '05/03/2023, 1:30 PM', image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1000&auto=format&fit=crop', thumbnail: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400&auto=format&fit=crop', type: 'Edit' },
     { id: '2', title: 'Mountain Lake Edit', date: '05/03/2023, 1:30 PM', image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop', thumbnail: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=400&auto=format&fit=crop', type: 'Enhance' },
     { id: '3', title: 'Feline Fusion', date: '05/03/2023, 1:30 PM', image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=1000&auto=format&fit=crop', thumbnail: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=400&auto=format&fit=crop', type: 'Morph' },
